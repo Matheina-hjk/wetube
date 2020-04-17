@@ -25,7 +25,8 @@
   },
   "scripts": {
     "dev:server": "nodemon --exec babel-node init.js --delay 2",
-    "dev:assets": "webpack"
+    "dev:assets": "WEBPACK_ENV=development webpack"
+    "build:assets": "WEBPACK_ENV=production webpack"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.27.0",
